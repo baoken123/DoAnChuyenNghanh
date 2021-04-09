@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-// import './App.css';
 import {connect} from 'react-redux';
 import NoteForm from './NoteForm';
 import NoteList from './NoteList';
+import Load from './TBook/Loadimages';
 
 class ListForm extends Component {
     ShowForm = () => {
@@ -12,11 +12,14 @@ class ListForm extends Component {
       }
     render() {
         return (
-            <div>
-                <NoteList />
+            <div class="container">
+            <div className="row">
+            {/* <Load /> */}
+            <NoteList />
                     {
                     this.ShowForm()
                     }
+            </div>
             </div>
         )
     }

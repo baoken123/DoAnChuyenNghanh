@@ -5,7 +5,8 @@ export default class Logo extends Component {
         return (
             <nav>
             <div className="logo">
-                <a href="./home.html">TBOOK.vn</a>
+                <a href="/">TBOOK.vn</a>
+                <a href="/login" className="nav-right">SIGN-IN</a>
             </div>
             </nav>
         )

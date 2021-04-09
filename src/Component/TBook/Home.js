@@ -3,8 +3,10 @@ import React, { Component } from 'react'
 export default class Home extends Component {
     render() {
         return (
-            <section>
-            <h2 className="container-title">QUẢN LÍ RỦI RO</h2>
+          
+          <section className="container-fluid">
+              <div>
+              <h2 className="container-title">QUẢN LÍ RỦI RO</h2>
     <div className="row">
       <div className="col-3">
         <div className="card border-dark card-baiviet">
@@ -100,9 +102,9 @@ export default class Home extends Component {
         </div>
       </div>  
     </div>
+              </div>
             </section>
-    
-
+          
         )
     }
 }

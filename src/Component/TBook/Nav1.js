@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import {connect} from "react-redux";
 import { BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
-import ListForm from '../ListForm';
-import EbookFree from '../TBook/EbookFree';
-import Home from '../TBook/Home';
+import Dieuhuong from '../Router/Dieuhuong';
+
+
 class Nav1 extends Component {
     formAddData = () => {
         this.props.DisplayFormAddData()
@@ -11,32 +11,26 @@ class Nav1 extends Component {
     }
     render() {
         return (
-          
+          <Router>
           <nav>
-          
   <div className="nav">
     <div className="nav-left">
       <nav className="navbar navbar-expand-sm navbar-light">
-        {/* <a class="navbar-brand" href="./home.html">TBOOK</a> */}
         <button className="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon" />
         </button>
        
         <div className="collapse navbar-collapse" id="collapsibleNavId">
-        <Router>
+        
           <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
             <li className="nav-item ">
-              <Link to="/home"><a className="nav-link active">HOME<span className="sr-only">(current)</span></a>
+              <Link to="/" className="nav-link">HOME
               </Link>
             </li>
             <li className="nav-item ">
-            <Link to="/Ebook-free"><a className="nav-link">EBOOK FREE</a></Link>
-              
+              <Link to="/Ebook-free" className="nav-link">EBOOK FREE</Link>  
             </li>
             
-            {/* <li class="nav-item">
-                          <a class="nav-link" href="./addbook.html">ADD BOOK</a>
-                      </li> */}
             <li>
             <a className="nav-link">
               <div className="btn-group">
@@ -51,29 +45,23 @@ class Nav1 extends Component {
             </a>
             </li>
             <li>
-              <Link to="/Todo-list" className="nav-link">TODO-LIST</Link>    
-              {/* <a className="nav-link">TODO-LIST</a>          */}
+              <Link to="/list-form" className="nav-link">TODO-LIST</Link>    
+              
             </li>
             <ul>
         </ul>
           </ul>
-          </Router>
+         
         </div>
         
       </nav>
     </div>
-    <div className="nav-right">
-      <div className="login">
-        <a href="#">LOGIN</a>
-      </div>
-      <div className="cart">
-        <a href="#">CART</a>
-      </div>
-    </div>
+    
   </div>
-
+  
 </nav>
-          
+  <Dieuhuong />
+</Router>     
             
 
         );

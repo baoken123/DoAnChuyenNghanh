@@ -1,11 +1,34 @@
 import React, { Component } from 'react'
+import {dataNote , storage} from '../Firebase';
 
 export default class EbookFree extends Component {
+  constructor () {
+    super()
+    this.state = {
+      lithuania: '',
+      dayconlamgiau:''
+      
+    }
+    
+    this.getImage('Ac-mong-dai-khung-hoang-1929-min')
+    this.getImage('Bi-quyet-tay-trang-thanh-trieu-phu-min');
+  }
+  getImage = (image) => {
+    let { state } = this
+    storage.child(`${image}.png`).getDownloadURL().then((url) => {
+      state[image] = url
+      this.setState(state)
+      console.log(image ," + thành công");
+    }).catch((error) => {
+      console.log(error);
+    })
+  }
+
     render() {
         return (
-            <section>s
+            <section>
                 <div>
-  <div className="container">
+  <div className="container-fluid">
     <div className="section-header">
       <h1>DANH SÁCH</h1>
     </div>
@@ -15,7 +38,9 @@ export default class EbookFree extends Component {
           <div className="list-group">
             <a href="./sanpham.html" className="list-group-item list-group-item-action active">Sách Đầu Tư</a>
             <a href="./sp-dayconlamgiau.html" className="list-group-item list-group-item-action ">Dạy Con Làm Giàu</a>
-            <a href="./sp-tamli.html" className="list-group-item list-group-item-action ">Tâm lý - Tư Duy</a>
+            <a href="./sp-tamli.html" className="list-group-item list-group-item-action ">
+            
+             Tâm lý - Tư Duy</a>
             {/* <a href="#" class="list-group-item list-group-item-action">Item</a>
                       <a href="#" class="list-group-item list-group-item-action "> item</a>
                       <a href="#" class="list-group-item list-group-item-action">Item</a>
@@ -29,7 +54,8 @@ export default class EbookFree extends Component {
             <div className="cards">
               <div className="card-body">
                 <h3 className="card-title">
-                  <img src="./image/Ac-mong-dai-khung-hoang-1929-min.png" alt="" />
+                  {/* <img src="./image/Ac-mong-dai-khung-hoang-1929-min.png" alt="" /> */}
+                  <img src={this.state.lithuania} alt="ac mong khung hoang"></img>
                 </h3>
                 <a href="https://drive.google.com/file/d/1auwJzr-vOdMXH6Brb7Nt47ARQlHcLMuI/view" className="card-text" target="blank"><p className="card-text">ÁC MỘNG KHỦNG HOẢNG 1929 PDF</p></a>
                 <a href className="card-text" />
@@ -40,7 +66,8 @@ export default class EbookFree extends Component {
             <div className="cards">
               <div className="card-body">
                 <h3 className="card-title">
-                  <img src="./image/Bi-quyet-tay-trang-thanh-trieu-phu-min.png" alt="" />
+                  {/* <img src="./image/Bi-quyet-tay-trang-thanh-trieu-phu-min.png" alt="" /> */}
+                  <img src={this.state.dayconlamgiau} alt="asdas"></img>
                 </h3>
                 <a href="https://drive.google.com/file/d/13CNCWeF2R8SuvU7wuRLt0jfBPkOSahaF/view" className="card-text"><p className="card-text">BỊ QUYẾT TAY TRẮNG THÀNH TRIỆU PHÚ</p></a>
               </div>

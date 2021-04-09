@@ -57,9 +57,9 @@ class NoteForm extends Component {
         return (
             <div className="col-4">
              {this.changeTitleForm()}
-            <form>
+            <form className="form-add-todolist">
             <div className="form-group">
-            <label>Tên Tiêu Đề</label>
+            <label className="formAdd_todolist_title">Tên Tiêu Đề</label>
                 <input
                  defaultValue={this.props.editItem.noteTitle}//display data from firebase
                  onChange={(event)=>this.IsChange(event)}
