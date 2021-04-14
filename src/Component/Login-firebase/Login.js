@@ -29,15 +29,17 @@ export default function Login() {
   if (!isSignedIn) {
     return (
       <div className="login-name">
-        <p>Please sign-in:</p>
+        <p>Login Form</p>
+        <p>or login social accounts</p>
         <StyledFirebaseAuth uiConfig={uiConfig} firebaseAuth={firebase.auth()} />
       </div>
     );
   }
   return (
     <div className="login-name">
-      <p>Welcome {firebase.auth().currentUser.displayName}! You are now signed-in!</p>
-      <a onClick={() => firebase.auth().signOut()}>Sign-out</a>
+      <p><strong>{firebase.auth().currentUser.displayName}</strong> Đã Đăng Nhập!</p>
+      <button className="btn btn-danger"><a onClick={() => firebase.auth().signOut()}>Đăng Xuất</a></button>
+      
     </div>
   );
 }

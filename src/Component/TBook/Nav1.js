@@ -35,7 +35,7 @@ class Nav1 extends Component {
             <a className="nav-link">
               <div className="btn-group">
                   <button className="btn dropdown-toggle btn-chungkhoan" type="" id="triggerId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <a className="nav-link" href="./addbook.html">HỌC CHỨNG KHOÁN</a>
+                    <a className="nav-link" href="./addbook.html">CHỨNG KHOÁN</a>
                   </button>
                   <div className="dropdown-menu dropdown-menu-left" aria-labelledby="triggerId">
                     <a className="dropdown-item drop-items-chungkhoan" href="./dautu.html">Phân Tích Cơ Bản</a>
