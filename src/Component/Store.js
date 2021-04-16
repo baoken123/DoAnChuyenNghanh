@@ -10,7 +10,7 @@ const allReducer = (state = dataInitialState, action) => {
     switch (action.type) {
         case "ADD_DATA":
             dataNote.push(action.getItem)
-            console.log( 'thêm dữ liệu' + JSON.stringify(action.getItem) + " thành công");
+            console.log( 'Thêm ' + JSON.stringify(action.getItem) + " thành công");
             return state
 
         case "CHANGE_EDIT_FORM":
@@ -20,7 +20,7 @@ const allReducer = (state = dataInitialState, action) => {
             return {...state, isAdd:!state.isAdd}
 
         case "GET_EDIT_DATA":
-            console.log(action.editObject + "hiện thị dữ liệu");
+            console.log(action.editObject + "hiển thị dữ liệu");
             return {...state,editItem:action.editObject}
             
             
@@ -36,7 +36,7 @@ const allReducer = (state = dataInitialState, action) => {
                 noteTitle : action.getItem.Title,
                 noteContent : action.getItem.Content
             })
-            console.log( "sửa dữ liệu  " + JSON.stringify(action.getItem) + "thành công");
+            console.log( "Cập Nhật dữ liệu  " + JSON.stringify(action.getItem) + "thành công");
             return {...state,editItem:{}}  
             
         default:

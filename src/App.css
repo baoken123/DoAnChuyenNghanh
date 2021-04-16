@@ -187,7 +187,10 @@ section .home-caption  a:hover
 }
 .pagination
 {
-  padding:10px 0px 10px 550px;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
 }
 .pagination li a {
   color: black;
@@ -204,6 +207,13 @@ img {
   margin: 10px 10px;
   height: 340px;
 }
+.container-row{
+  display: flex;
+  width: 100%;
+  min-height: auto;
+  align-items: center;
+  justify-content: center;
+}
 .container-fluid .content-investor{
   margin-top: 10px;
   /* box-sizing: border-box;
@@ -218,6 +228,13 @@ img {
 .btn-chungkhoan
 {
   padding: 0px 0px;
+}
+.bnt-AddForm{
+  display: flex;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0px;
 }
 .drop-items-chungkhoan:hover
 {
@@ -244,8 +261,13 @@ img {
   border-radius: 20px; */
 }
 .container-fluid{
-  background-image: linear-gradient(to bottom, #636e72 , #dfe6e9 );
+  background-image: linear-gradient(to left , #9b59b6 , #3498db);
 }
+/* .Container-TodoList
+{
+  background-image: linear-gradient(to left , #9b59b6 , #3498db);
+  width: 100%;
+} */
 .form-add-todolist
 {
   box-sizing: border-box;
@@ -266,4 +288,10 @@ h3{
   font-style:normal;
   font-weight: 600;
   text-align: center;
+}
+.card-text:last-child {
+  color: white;
+  margin-bottom: 0;
+  text-align: center;
+  align-items: center;
 }

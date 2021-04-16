@@ -49,14 +49,17 @@ constructor(props) {
     }
     render() {
         return (
-            <div className="col">
+            
+                <div className="col">
                 <button className="btn btn-info bnt-AddForm" onClick={()=>this.formAddData()}>Thêm Mới</button>
-                <div id="NoteList" role="tablist" aria-multiselectable="true">
-                {
-                    this.getData()
-                }
+                    <div id="NoteList" role="tablist" aria-multiselectable="true">
+                    {
+                        this.getData()
+                    }
+                    </div>
                 </div>
-            </div>
+            
+            
         )
     }
 }

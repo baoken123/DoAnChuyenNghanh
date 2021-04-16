@@ -50,9 +50,9 @@ export default class EbookFree extends Component {
     <div className="section-header">
       <h1>DANH SÁCH</h1>
     </div>
-    <div className="row">
-      <div className="col-2">
-        {/* <div className="section-list">
+    <div className="row container-row">
+      {/* <div className="col-2">
+        <div className="section-list">
           <div className="list-group">
             <a href="./sanpham.html" className="list-group-item list-group-item-action active">Sách Đầu Tư</a>
             <a href="./sp-dayconlamgiau.html" className="list-group-item list-group-item-action ">Dạy Con Làm Giàu</a>
@@ -64,9 +64,9 @@ export default class EbookFree extends Component {
                       <a href="#" class="list-group-item list-group-item-action">Item</a>
                       <a href="#" class="list-group-item list-group-item-action "> item</a>
           </div>
-        </div> */}
-      </div>
-      <div className="col-8">
+        </div>
+      </div> */}
+      <div className="col-10">
         <div className="row">
           <div className="col-xs-1-10 col-3">
             <div className="cards">
@@ -75,7 +75,7 @@ export default class EbookFree extends Component {
                   <img src="https://firebasestorage.googleapis.com/v0/b/data-test-22926.appspot.com/o/image-book%2FAc-mong-dai-khung-hoang-1929-min.png?alt=media&token=bcb921c4-0616-4a55-befb-8821a14b048d"></img>
                 </h3>
                 <a href="https://drive.google.com/file/d/1auwJzr-vOdMXH6Brb7Nt47ARQlHcLMuI/view" className="card-text" target="blank"><p className="card-text">ÁC MỘNG KHỦNG HOẢNG 1929 PDF</p></a>
-                <a href className="card-text" />
+                
               </div>
             </div>
           </div>
@@ -190,26 +190,25 @@ export default class EbookFree extends Component {
               </div>
             </div>
           </div>
+          <Router>
+  <ul className="pagination">
+        <li className="page-item "><a className="page-link" href="#">&laquo;</a></li>
+        <li className="page-item active">
+          <a className="page-link" href="/Ebook-free">1</a>
+        </li>
+        <li className="page-item ">
+          <a className="page-link" href="/Ebook-free2">2</a></li>
+        <li className="page-item ">
+        <a className="page-link" href="/Ebook-free3">3</a>
+        </li>
+        <li className="page-item"><a className="page-link" href="#">&raquo;</a></li>
+      </ul>
+  </Router>
         </div>                       
       </div>
     </div>
-  </div>
-  <Router>
-  <ul className="pagination">
-        <li className="page-item "><a className="page-link" href="#">Previous</a></li>
-        <li className="page-item ">
-          <a className="page-link" href="/Ebook-free">1</a>
-        </li>
-        <li className="page-item active">
-          <a className="page-link" href="">2</a></li>
-        <li className="page-item"><a className="page-link" href>3</a>
-        </li>
-        <li className="page-item"><a className="page-link" href="#">Next</a></li>
-      </ul>
-  </Router>
-     
+  </div>   
 </div>
-
 </section>
         )
     }

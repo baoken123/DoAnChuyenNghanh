@@ -5,6 +5,8 @@ import ListForm from '../ListForm';
 import Home from '../TBook/Home';
 import Login from '../Login-firebase/Login';
 import Ckediter from '../Ckediter';
+import EbookFree2 from '../TBook/EbookFree2';
+import EbookFree3 from '../TBook/EbookFree3';
 export default class Dieuhuong extends Component {
     render() {
         return (
@@ -13,6 +15,8 @@ export default class Dieuhuong extends Component {
                     <Route exact path="/" component={Home} />
                     <Route  path="/list-form" component={ListForm} />
                     <Route  path="/Ebook-free" component={EbookFree} />
+                    <Route  path="/Ebook-free2" component={EbookFree2} />
+                    <Route  path="/Ebook-free3" component={EbookFree3} />
                     <Route  path="/login" component={Login} />
                     <Route  path="/ck" component={Ckediter} />
                 </Switch>
