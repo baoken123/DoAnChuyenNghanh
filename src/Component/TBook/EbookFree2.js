@@ -33,7 +33,7 @@ export default class EbookFree2 extends Component {
                 <h3 className="card-title">
                   <img src="https://firebasestorage.googleapis.com/v0/b/data-test-22926.appspot.com/o/image-book%2FPh%C6%B0%C6%A1ng-ph%C3%A1p-m%E1%BB%9Bi-%C4%91%E1%BB%83-giao-d%E1%BB%8Bch-ki%E1%BA%BFm-s%E1%BB%91ng-min.png?alt=media&token=bb6ad800-94f7-4d18-b731-f40ebaf84314" alt="phuong phap moi de giao dich kiem song" />
                 </h3>
-                <a href="" className="card-text">PHƯƠNG PHÁP MỚI ĐỂ GIAO DỊCH KIẾM SỐNG</a>
+                <a href="" className="card-text" target="blank">PHƯƠNG PHÁP MỚI ĐỂ GIAO DỊCH KIẾM SỐNG</a>
               </div>
             </div>
           </div>

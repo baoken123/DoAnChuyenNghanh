@@ -58,8 +58,6 @@ constructor(props) {
                     }
                     </div>
                 </div>
-            
-            
         )
     }
 }
