@@ -22,9 +22,10 @@ class App extends Component {
           
         </div>
         <MessengerCustomerChat
-          pageId="100066916465707"
-          appId="1227793614306982"
-        />
+          pageId="100172888884902"
+          appId="1123026281504793"
+          language="vi_VN"
+      />
       </div>
      
       
