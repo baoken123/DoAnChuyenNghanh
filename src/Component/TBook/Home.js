@@ -1,9 +1,10 @@
 import React, { Component } from 'react'
+import data from './data.json';
 
 export default class Home extends Component {
+
     render() {
         return (
-          
           <section className="container-fluid">
               <div>
               <h2 className="container-title">QUẢN LÍ RỦI RO</h2>

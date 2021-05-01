@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import NoteForm from './NoteForm';
 import Logo from './TBook/Logo';
 import Nav1 from './TBook/Nav1';
+import MessengerCustomerChat from 'react-messenger-customer-chat';
 
 class App extends Component {
   ShowForm = () => {
@@ -18,7 +19,12 @@ class App extends Component {
         <div className="container-fluid">  
           <div className="row">
           </div>
+          
         </div>
+        <MessengerCustomerChat
+          pageId="100066916465707"
+          appId="1227793614306982"
+        />
       </div>
      
       
