@@ -114,11 +114,7 @@ a.nav-link {
   font-weight: 600;
   font-size: 20px;
 }
-/* section{
-  width: 100%;
-  background-size: cover;
-  /* background-image: url(./image/SINVEST.vn\ quote\ 79.jpg); */
-/* } */ 
+
 .img-fluid
 {
   width: 100%;
@@ -220,7 +216,7 @@ img {
   border: 1px solid peru;
   border-radius: 20px; */
 }
-.card {
+.card{
   box-sizing: border-box;
   border-radius: 40px;
   height: 120px;
@@ -249,20 +245,17 @@ img {
 {
     color: black;
 }
+.card-img-top{
+  width: auto;
+  margin-left: 0;
+}
 .container-title
 {
     padding-top: 10px;
     text-align: center;
 }
-.container-fluid .content-investor{
-  margin-top: 10px;
-  /* box-sizing: border-box;
-  border: 1px solid peru;
-  border-radius: 20px; */
-}
-.container-fluid{
-  background-image: linear-gradient(to left , #9b59b6 , #3498db);
-}
+
+
 /* .Container-TodoList
 {
   background-image: linear-gradient(to left , #9b59b6 , #3498db);
@@ -299,4 +292,14 @@ h3{
   font-size: 14px;
   text-align: center;
   padding: 0 0 0 0 ;
+}
+.card-time{
+  font-size: small;
+  color: aqua;
+}
+.card-text-desscription{
+  font-size: small;
+}
+.card-stock{
+  color:rgb(105, 214, 83);
 }

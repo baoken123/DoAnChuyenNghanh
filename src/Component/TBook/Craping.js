@@ -15,6 +15,8 @@ axios.get('https://vietstock.vn/chung-khoan.htm').then((Response)=>{
         const time = $(element).find(".meta .date").text();
         const image = $(element).find(".thumb .img-responsive").attr("src");
         const Stock = $(element).find(".stock-list a").text();
+        const StockIndex = $(element).find(".stock-list span.color-up").text();
+        const StockLink = $(element).find(".stock-list a").attr("href");
         
         
         section.push({
@@ -22,7 +24,7 @@ axios.get('https://vietstock.vn/chung-khoan.htm').then((Response)=>{
             link,
             Description,
             time,
-            image,Stock
+            image,Stock,StockIndex,StockLink
         });
     });
     fs.writeFileSync('data.json', JSON.stringify(section))
