@@ -38,8 +38,9 @@ class Nav1 extends Component {
                     <a className="nav-link" href="./addbook.html">CHỨNG KHOÁN</a>
                   </button>
                   <div className="dropdown-menu dropdown-menu-left" aria-labelledby="triggerId">
-                    <a className="dropdown-item drop-items-chungkhoan" href="./dautu.html">Phân Tích Cơ Bản</a>
-                    <a className="dropdown-item " href="#">Disabled action</a>
+                    <a className="dropdown-item drop-items-chungkhoan" href="/ChungKhoan">Nhận Định</a>
+                    <a className="dropdown-item drop-items-chungkhoan" href="/ChungKhoan">Quốc tế</a>
+                    {/* <a className="dropdown-item " href="#">Disabled action</a> */}
                   </div>
                 </div>
             </a>

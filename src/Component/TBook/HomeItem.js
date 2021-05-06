@@ -7,9 +7,10 @@ export default class HomeItem extends Component {
         return (
             <section className="container-fluid">
                  <div className="row">
-                     <div className="col">
+                     <div className="col-md-8 col-sm-7 dual-posts padding-bottom-30 sm-padding-right-30">
                      <div class="card-deck">
-                        <img class="card-img-top" src={this.props.image} alt="Card image cap" />
+                        <img class="card-img-top" src={this.props.image} 
+                         alt="Card image cap" />                      
                         <div class="card-body">
                             <a href="#">
                                 <span>{this.props.groupTitle}</span>
@@ -23,9 +24,8 @@ export default class HomeItem extends Component {
                                 <span class="color-up p-l-xs">{this.props.stockIdex}</span>
                         </div>
                         </div>                    
-                        </div>
-                        
-                     </div>
+                        </div>                       
+                     </div>                    
             </section>
             
             

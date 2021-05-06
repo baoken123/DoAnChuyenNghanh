@@ -295,11 +295,14 @@ h3{
 }
 .card-time{
   font-size: small;
-  color: aqua;
+  color: grey;
 }
 .card-text-desscription{
   font-size: small;
 }
 .card-stock{
   color:rgb(105, 214, 83);
+}
+.col-8 .card-deck{
+  height: 100%;
 }
