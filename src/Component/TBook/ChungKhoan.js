@@ -7,7 +7,7 @@ export default class ChungKhoan extends Component {
         return (
             <section className="container-fluid">
               <div>
-              <h2 className="container">TIN TỨC</h2>
+              <h2 className="container-title">TIN TỨC</h2>
                 {
                   Data1.map((value,key)=>{
                   return(
@@ -17,10 +17,17 @@ export default class ChungKhoan extends Component {
                         titleReader={value.titleReader}
                         timeReader={value.timeReader}
 
-                        ImageReader1={value.ImageTitleReader1}
-                        LinkReader1={value.LinkTitleReader1}
-                        titleReader1={value.titleReader1}
-                        timeReader1={value.timeReader1}
+                        // ImageReader1={value.ImageTitleReader1}
+                        // LinkReader1={value.LinkTitleReader1}
+                        // titleReader1={value.titleReader1}
+                        // timeReader1={value.timeReader1}
+
+                        // BoxTitle={value.BoxTitle}
+                        // title={value.title}
+                        // BoxTitleLink={value.BoxTitleLink}
+                        // titleLink={value.titleLink}
+                        // ImageTitle={value.ImageTitle}
+                        
                     ></ChungKhoanItem>
                       ) 
                     })

@@ -8,20 +8,18 @@ axios.get('https://vietstock.vn/chung-khoan.htm').then( async (Response) =>  {
     const section = [];
     const $  = await cheerio.load(Response.data);
 
-    $('#channel-container section').each((index , element )=>{
-        const title =  $(element).find(".channel-title").text().trim();
+    $("#channel-container .row").each((index , element )=>{
+        
+        const title =  $(element).find(".channel-title a").text().trim();
         const link =  $(element).find(".channel-title a").attr("href");
-        const Description =  $(element).find(".channel-head").text();
-        const time =  $(element).find(".meta .date").text();
         const image =  $(element).find(".thumb .img-responsive").attr("src");
-        const Stock =  $(element).find(".stock-list a").text();
-        const StockIndex =  $(element).find(".stock-list span.color-up").text();
-        const StockLink =  $(element).find(".stock-list a").attr("href");
+        const time =  $(element).find(".meta .date").text();
+        const Description =  $(element).find(".channel-head").text();
+        
         section.push({
-            title,link,Description,time,image,Stock,StockIndex,StockLink,
-        });
+            title,image,time,link,Description
+        }); 
     });
-    
 
     fs.writeFileSync('data.json', JSON.stringify(section))
     console.log(section);

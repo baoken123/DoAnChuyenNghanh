@@ -303,6 +303,16 @@ h3{
 .card-stock{
   color:rgb(105, 214, 83);
 }
-.col-8 .card-deck{
-  height: 100%;
+.card-title{
+  color: grey;
+  text-decoration: none;
+}
+.card-title .card-con a{
+  text-decoration: none;
+}
+.fan-quote-698{
+  width:50%;
+  display:flex;
+  align-items: center;
+  justify-content: center;
 }

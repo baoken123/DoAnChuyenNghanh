@@ -22,11 +22,8 @@ export default class Home extends Component {
                           link= {value.link}
                           time={value.time}
                           image={value.image}
-                          stock ={value.Stock}
-                          stockIdex= {value.StockIndex}
-                          stockLink= {value.StockLink}
-                          groupTitle ={value.groupTitle}
-                    ></HomeItem>
+                          
+                    ></HomeItem>                                     
                       ) 
                     })
                 }
