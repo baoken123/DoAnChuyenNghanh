@@ -26,11 +26,7 @@ class App extends Component {
           appId="1227793614306982"
           language="vi_VN"
         />
-
-        
       </div>
-     
-      
       );
   }
 }

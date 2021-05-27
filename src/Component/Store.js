@@ -14,7 +14,7 @@ const allReducer = (state = dataInitialState, action) => {
             return state
 
         case "CHANGE_EDIT_FORM":
-            return {...state, isEdit:!state.isEdit}
+            return {...state, isEdit:!state.isEdit} 
         
         case "CHANGE_ADD_FORM":
             return {...state, isAdd:!state.isAdd}
@@ -23,13 +23,11 @@ const allReducer = (state = dataInitialState, action) => {
             console.log(action.editObject + "hiển thị dữ liệu");
             return {...state,editItem:action.editObject}
             
-            
-
         case "REMOVE":
             dataNote.child(action.deleteID).remove() 
             console.log("đã xóa phần tử có ID : " + JSON.stringify(action.deleteID)  + " thành công");
             return state
-
+            
         case "EDIT":
             var data =  dataNote.child(action.getItem.id)  
             data.update({

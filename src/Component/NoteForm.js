@@ -65,15 +65,15 @@ class NoteForm extends Component {
                  onChange={(event)=>this.IsChange(event)}
                  type="text" name="noteTitle"  className="form-control" placeholder="điền tên tiêu đề" aria-describedby="helpId" />
             </div>
-            <div className="form-group">
-                <label htmlFor>Nội dung tiêu đề</label>
-                <textarea 
-                defaultValue={this.props.editItem.noteContent}//display data from firebase
-                onChange={(event)=>this.IsChange(event)}
-                type="text" name="noteContent" className="form-control" placeholder="điền nội dung tiêu điền" aria-describedby="helpId" />
-                <button onClick={()=> this.addData(this.state.noteTitle,this.state.noteContent,this.state.id)}
-                type="reset" className="btn btn-block btn-primary w-100">lưu</button>
-            </div>
+                <div className="form-group">
+                    <label htmlFor>Nội dung tiêu đề</label>
+                    <textarea 
+                    defaultValue={this.props.editItem.noteContent}//display data from firebase
+                    onChange={(event)=>this.IsChange(event)}
+                    type="text" name="noteContent" className="form-control" placeholder="điền nội dung tiêu điền" aria-describedby="helpId" />
+                    <button onClick={()=> this.addData(this.state.noteTitle,this.state.noteContent,this.state.id)}
+                    type="reset" className="btn btn-block btn-primary w-100">lưu</button>
+                </div>
             </form> 
             </div>
         )

@@ -1,3 +1,5 @@
+@import "~antd/dist/antd.css";
+
 .App {
   text-align: center;
 }
@@ -283,7 +285,7 @@ h3{
   text-align: center;
 }
 .card-text:last-child {
-  color: white;
+  color:black ;
   margin-bottom: 0;
   text-align: center;
   align-items: center;
@@ -315,4 +317,12 @@ h3{
   display:flex;
   align-items: center;
   justify-content: center;
+}
+.container-fluid .card-deck{
+  display: flex;
+  flex-direction: row;
+
+}
+.table.table-indices td {
+  padding: 2px 15px;
 }

@@ -23,34 +23,26 @@ class Nav1 extends Component {
         <div className="collapse navbar-collapse" id="collapsibleNavId">
         
           <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
-            <li className="nav-item ">
-              <Link to="/" className="nav-link">HOME
-              </Link>
+          <li className="nav-item ">
+              <Link to="/" className="nav-link">HOME</Link>  
             </li>
             <li className="nav-item ">
               <Link to="/Ebook-free" className="nav-link">EBOOK FREE</Link>  
             </li>
-            
-            <li>
-            <a className="nav-link">
-              <div className="btn-group">
-                  <button className="btn dropdown-toggle btn-chungkhoan" type="" id="triggerId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <a className="nav-link" href="./addbook.html">CHỨNG KHOÁN</a>
-                  </button>
-                  <div className="dropdown-menu dropdown-menu-left" aria-labelledby="triggerId">
-                    <a className="dropdown-item drop-items-chungkhoan" href="/ChungKhoan">Nhận Định</a>
-                    <a className="dropdown-item drop-items-chungkhoan" href="/ChungKhoan">Quốc tế</a>
-                    {/* <a className="dropdown-item " href="#">Disabled action</a> */}
-                  </div>
-                </div>
-            </a>
+            <li className="nav-item ">
+              <a className="nav-link" href="/ChungKhoan">NHẬN ĐỊNH</a>  
+            </li>
+           
+            <li className="nav-item ">
+              <a className="nav-link" href="https://stockchart.vietstock.vn/" target="_blank">PT KĨ THUẬT</a>
             </li>
             <li>
               <Link to="/list-form" className="nav-link">TODO-LIST</Link>    
-              
             </li>
-            <ul>
-        </ul>
+            <li className="nav-item ">
+              <a className="nav-link" href="/widget">WD`</a>  
+            </li>
+           
           </ul>
          
         </div>
