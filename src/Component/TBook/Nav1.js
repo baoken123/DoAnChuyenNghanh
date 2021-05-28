@@ -32,26 +32,24 @@ class Nav1 extends Component {
             <li className="nav-item ">
               <a className="nav-link" href="/ChungKhoan">NHẬN ĐỊNH</a>  
             </li>
-           
-            <li className="nav-item ">
-              <a className="nav-link" href="https://stockchart.vietstock.vn/" target="_blank">PT KĨ THUẬT</a>
-            </li>
             <li>
               <Link to="/list-form" className="nav-link">TODO-LIST</Link>    
             </li>
-            <li className="nav-item ">
+            {/* <li className="nav-item ">
               <a className="nav-link" href="/widget">WD`</a>  
+            </li> */}
+            <li className="nav-item ">
+              <a className="nav-link" href="/widgetfolow">FOREX</a>  
             </li>
-           
+            <li className="nav-item ">
+              <a className="nav-link" href="https://trade.vndirect.com.vn/chung-khoan/hose" target="_blank"> VN-INDEX</a>
+            </li>
           </ul>
          
-        </div>
-        
+        </div>     
       </nav>
     </div>
-    
   </div>
-  
 </nav>
   <Dieuhuong />
 </Router>     

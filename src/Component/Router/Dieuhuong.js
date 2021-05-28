@@ -9,13 +9,15 @@ import EbookFree3 from '../TBook/EbookFree3';
 import ChungKhoan from '../TBook/ChungKhoan';
 import KDKK from '../TBook/KDKK';
 import Widget from '../TBook/Widget';
+import WidgetFolow from '../TBook/WidgetFolow';
 
 export default class Dieuhuong extends Component {
     render() {
         return (
             <div>
                 <Switch>
-                    <Route  path="/widget" component={Widget} />
+                    <Route  path="/widgetfolow" component={WidgetFolow} />
+                    {/* <Route  path="/widget" component={Widget} /> */}
                     <Route  path="/list-form" component={ListForm} />
                     <Route  path="/Ebook-free" component={EbookFree} />
                     <Route  path="/Ebook-free2" component={EbookFree2} />
