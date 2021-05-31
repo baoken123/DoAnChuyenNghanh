@@ -7,12 +7,12 @@ import {List, notification ,Pagination ,Spin } from "antd";
   const [current, setCurrent] = useState(1);
   const [isShowLoading, setIsShowLoading] = useState(false);
   // Tương tự như componentDidMount và componentDidUpdate:
-  useEffect(() => {
-      axios.get('https://quanlyminhchungdaotaoapi.herokuapp.com/api/v1/lay-du-lieu/vietstock')
-      .then(respone => {
-          setData(respone.data.ListObject)
-      })
-  },[]);
+  // useEffect(() => {
+  //     axios.get('https://quanlyminhchungdaotaoapi.herokuapp.com/api/v1/lay-du-lieu/vietstock')
+  //     .then(respone => {
+  //         setData(respone.data.ListObject)
+  //     })
+  // },[]);
   useEffect(() => {
     setIsShowLoading(true);
     axios.get(`https://quanlyminhchungdaotaoapi.herokuapp.com/api/v1/lay-du-lieu/vietstockwithpage?pageNumber=${current}`)

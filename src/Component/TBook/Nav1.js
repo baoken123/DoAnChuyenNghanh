@@ -44,6 +44,9 @@ class Nav1 extends Component {
             <li className="nav-item ">
               <a className="nav-link" href="https://trade.vndirect.com.vn/chung-khoan/hose" target="_blank"> VN-INDEX</a>
             </li>
+            <li className="nav-item ">
+              <a className="nav-link" href="/ptconban">PT CƠ BẢN</a>  
+            </li>
           </ul>
          
         </div>     

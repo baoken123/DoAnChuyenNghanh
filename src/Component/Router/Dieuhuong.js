@@ -10,12 +10,14 @@ import ChungKhoan from '../TBook/ChungKhoan';
 import KDKK from '../TBook/KDKK';
 import Widget from '../TBook/Widget';
 import WidgetFolow from '../TBook/WidgetFolow';
+import PTcoban from '../TBook/PTcoban';
 
 export default class Dieuhuong extends Component {
     render() {
         return (
             <div>
                 <Switch>
+                    <Route  path="/ptconban" component={PTcoban} />
                     <Route  path="/widgetfolow" component={WidgetFolow} />
                     {/* <Route  path="/widget" component={Widget} /> */}
                     <Route  path="/list-form" component={ListForm} />

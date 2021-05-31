@@ -17,7 +17,7 @@ export default class WidgetFolow extends Component {
         return (
             <div className="application">
              <TradingViewWidget
-                symbol="NASDAQ"
+                symbol="NASDAQ:AAPL"
                 theme={Themes.DARK}
                 locale="vi_VN"
                 hotlist="true"
