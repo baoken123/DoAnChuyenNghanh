@@ -42,11 +42,21 @@ class Nav1 extends Component {
               <a className="nav-link" href="/widgetfolow">FOREX</a>  
             </li>
             <li className="nav-item ">
-              <a className="nav-link" href="https://trade.vndirect.com.vn/chung-khoan/hose" target="_blank"> VN-INDEX</a>
+              <a className="nav-link" href="https://fireant.vn/charts" target="_blank"> VN-INDEX</a>
             </li>
             <li className="nav-item ">
               <a className="nav-link" href="/ptconban">PT CƠ BẢN</a>  
             </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                PT KĨ THUẬT
+              </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="/nen-nhat">ĐỒ THỊ NẾN NHẬT</a>
+                <a class="dropdown-item" href="/Fibonanci">FIBONANCI</a>
+                <a class="dropdown-item" href="/Eliot">SÓNG ELIOT</a>
+              </div>
+          </li>
           </ul>
          
         </div>     

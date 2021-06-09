@@ -11,12 +11,19 @@ import KDKK from '../TBook/KDKK';
 import Widget from '../TBook/Widget';
 import WidgetFolow from '../TBook/WidgetFolow';
 import PTcoban from '../TBook/PTcoban';
+import Fibonanci from '../TBook/PT-kithuat/Fibonanci';
+import NenNhat from '../TBook/PT-kithuat/NenNhat';
+import Eliot from '../TBook/PT-kithuat/Eliot';
+
 
 export default class Dieuhuong extends Component {
     render() {
         return (
             <div>
                 <Switch>
+                    <Route  path="/Eliot" component={Eliot} />
+                    <Route  path="/Fibonanci" component={Fibonanci} />
+                    <Route  path="/nen-nhat" component={NenNhat} />
                     <Route  path="/ptconban" component={PTcoban} />
                     <Route  path="/widgetfolow" component={WidgetFolow} />
                     {/* <Route  path="/widget" component={Widget} /> */}
