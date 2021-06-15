@@ -14,7 +14,10 @@ import PTcoban from '../TBook/PTcoban';
 import Fibonanci from '../TBook/PT-kithuat/Fibonanci';
 import NenNhat from '../TBook/PT-kithuat/NenNhat';
 import Eliot from '../TBook/PT-kithuat/Eliot';
-
+import FiboRetracement from '../TBook/PT-kithuat/FiboRetracement';
+import FiboExtention from '../TBook/PT-kithuat/FiboExtention';
+import NenNhatDaoChieu from '../TBook/PT-kithuat/NenNhatDaoChieu';
+import NenNhatTiepDien from '../TBook/PT-kithuat/NenNhatTiepDien';
 
 export default class Dieuhuong extends Component {
     render() {
@@ -22,8 +25,15 @@ export default class Dieuhuong extends Component {
             <div>
                 <Switch>
                     <Route  path="/Eliot" component={Eliot} />
+
                     <Route  path="/Fibonanci" component={Fibonanci} />
+                    <Route  path="/FiboRetrace" component={FiboRetracement} />
+                    <Route  path="/FiboExtention" component={FiboExtention} />
+
                     <Route  path="/nen-nhat" component={NenNhat} />
+                    <Route  path="/nendaochieu" component={NenNhatDaoChieu} />
+                    <Route  path="/nentiepdien" component={NenNhatTiepDien} />
+
                     <Route  path="/ptconban" component={PTcoban} />
                     <Route  path="/widgetfolow" component={WidgetFolow} />
                     {/* <Route  path="/widget" component={Widget} /> */}

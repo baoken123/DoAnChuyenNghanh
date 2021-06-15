@@ -4,6 +4,7 @@ const { Link } = Anchor;
 export default function Fibonanci() {
     return (
         <div className="container-fluid">
+            <h2>BÀI 1:FIBONACCI LÀ GÌ?</h2>
             <div className="row">
                 <div className="col-3">
                     <Anchor>
@@ -62,6 +63,20 @@ export default function Fibonanci() {
                         <p>Hầu hết các nền tảng giao dịch Forex hiện nay đều có công cụ Fibonacci Retracement và Fibonacci Extension.</p>
                         <p>Các mức Fibonacci sẽ được hiển thị trên biểu đồ nến nên bạn sẽ không cần phải thực hiện bất kỳ tính toán nào. Việc của bạn là sử dụng nó thật tốt.</p>
                     </section>
+                </div>
+            </div>
+            <div className="row">
+                <div className="col-6">
+                    <p>bài tiếp theo</p>
+                    <h2>
+                        <a href="/FiboRetrace">BÀI 2: HƯỚNG DẪN SỬ DỤNG FIBONACCI RETRACEMENT TÌM ĐIỂM VÀO TỐI ƯU</a>
+                    </h2>
+                </div>
+                <div className="col-6">
+                    <p>bài tiếp theo</p>
+                    <h2>
+                        <a href="/FiboExtention">BÀI 3: HƯỚNG DẪN SỬ DỤNG FIBONACCI EXTENSION ĐỂ CHỐT LỜI HIỆU QUẢ</a>
+                    </h2>
                 </div>
             </div>
         </div>

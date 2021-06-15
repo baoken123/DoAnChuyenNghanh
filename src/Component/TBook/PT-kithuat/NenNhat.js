@@ -6,16 +6,14 @@ export default function NenNhat() {
     return (
         <div>
             <div className="container-fluid">
+            <h2>BÀI 1: NẾN NHẬT LÀ GÌ? </h2>    
                 <div className="row">
                     <div className="col-3">
                         <Anchor>
                             <Link href="#nguon-goc" title="1. Nguồn gốc đồ thị nến nhật" />
                             <Link href="#dac-diem" title="2. Các đặt điểm của mô hình nến" />
                             <Link href="#mohinh-nennhat" title="3. Các mô hình nến Nhật cơ bản">
-                                {/* <Link href="#monhinh-1" title="3.1 Mô hình nến Spinning Top - Con xoay" />
-                                <Link href="#monhinh-2" title="3.2. Mô hình nến Marubozu" />
-                                <Link href="#monhinh-3" title="3.3. Mô hình nến Nhật Hammer và Inverted Hammer" />
-                                <Link href="#monhinh-4" title="3.4. Mô hình nến Doji" /> */}
+                               
                             </Link>
                             <Link href="#hanche-nennhat" title="4. Hạn chế của các mô hình nến Nhật" />
                             <Link href="#ketluan" title="5. Tổng kết về các mô hình nến Nhật" />
@@ -178,7 +176,20 @@ export default function NenNhat() {
             </div>
                 </div>
             </div>
-
+            <div className="row">
+                <div className="col-6">
+                    <p>bài tiếp theo</p>
+                    <h2>
+                        <a href="/nendaochieu"> BÀI 2: CÁC MÔ HÌNH NẾN ĐẢO CHIỀU</a>
+                    </h2>
+                </div>
+                <div className="col-6">
+                    <p>bài tiếp theo</p>
+                    <h2>
+                        <a href="/nentiepdien"> BÀI 3: CÁC MÔ HÌNH NẾN TIẾP DIỄN</a>
+                    </h2>
+                </div>
+            </div>
         </div>
     )
 }

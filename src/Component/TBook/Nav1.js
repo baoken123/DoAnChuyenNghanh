@@ -53,7 +53,13 @@ class Nav1 extends Component {
               </a>
               <div class="dropdown-menu">
                 <a class="dropdown-item" href="/nen-nhat">ĐỒ THỊ NẾN NHẬT</a>
-                <a class="dropdown-item" href="/Fibonanci">FIBONANCI</a>
+                <a class="dropdown-item" href="/nendaochieu">CÁC MÔ HÌNH NẾN ĐẢO CHIỀU</a>
+                <a class="dropdown-item" href="/nentiepdien">CÁC MÔ HÌNH NẾN TIẾP DIỄN</a>
+
+                <a class="dropdown-item" href="/Fibonanci">FIBONANCCI</a>
+                <a class="dropdown-item" href="/FiboRetrace">FIBONANCCI RETRACEMENT</a>
+                <a class="dropdown-item" href="/FiboExtention">FIBONANCCI EXTENSION</a>
+
                 <a class="dropdown-item" href="/Eliot">SÓNG ELIOT</a>
               </div>
           </li>
