@@ -25,10 +25,11 @@ export default class WidgetFolow extends Component {
                 calendar="true"
                 withdateranges="true"
                 timezone="exchange"
-                allow_symbol_change="true"
+                allow_symbol_change= {true}
                 width="1349"
-                hide_side_toolbar="false"
+                hide_side_toolbar={false}
                 toolbar_bg='#F1F3F6'
+                container_id= "tradingview_8cadd"
             />
             <div class="tradingview-widget-container" ref={this._ref}>
                 <div class="tradingview-widget-container__widget"></div>
