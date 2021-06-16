@@ -50,7 +50,7 @@ class NoteForm extends Component {
             return <h3>Thêm Mới</h3>
         }
         else{
-            return <h3>Sửa Nội dụng </h3>
+            return <h4>Sửa Nội dụng </h4>
         }
     }
     render() {

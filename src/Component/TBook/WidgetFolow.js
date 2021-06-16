@@ -15,7 +15,7 @@ export default class WidgetFolow extends Component {
     }
     render() {
         return (
-            <div className="application">
+            <div>
              <TradingViewWidget
                 symbol="NASDAQ:AAPL"
                 theme={Themes.DARK}
@@ -27,7 +27,8 @@ export default class WidgetFolow extends Component {
                 timezone="exchange"
                 allow_symbol_change="true"
                 width="1349"
-                
+                hide_side_toolbar="false"
+                toolbar_bg='#F1F3F6'
             />
             <div class="tradingview-widget-container" ref={this._ref}>
                 <div class="tradingview-widget-container__widget"></div>

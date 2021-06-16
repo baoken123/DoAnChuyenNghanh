@@ -30,10 +30,10 @@ class Nav1 extends Component {
               <Link to="/Ebook-free" className="nav-link">EBOOK FREE</Link>  
             </li>
             <li className="nav-item ">
-              <a className="nav-link" href="/ChungKhoan">NHẬN ĐỊNH</a>  
+              <a className="nav-link" href="/ChungKhoan">NHẬN ĐỊNH THỊ TRƯỜNG</a>  
             </li>
             <li>
-              <Link to="/list-form" className="nav-link">TODO-LIST</Link>    
+              <Link to="/list-form" className="nav-link">GHI CHÚ</Link>    
             </li>
             {/* <li className="nav-item ">
               <a className="nav-link" href="/widget">WD`</a>  
@@ -42,7 +42,7 @@ class Nav1 extends Component {
               <a className="nav-link" href="/widgetfolow">FOREX</a>  
             </li>
             <li className="nav-item ">
-              <a className="nav-link" href="https://fireant.vn/charts" target="_blank"> VN-INDEX</a>
+              <a className="nav-link" href="https://fireant.vn/charts" target="_blank">VN-INDEX</a>
             </li>
             <li className="nav-item ">
               <a className="nav-link" href="/ptconban">PT CƠ BẢN</a>  
@@ -62,7 +62,18 @@ class Nav1 extends Component {
 
                 <a class="dropdown-item" href="/Eliot">SÓNG ELIOT</a>
               </div>
-          </li>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                VIDEO HƯỚNG DẪN
+              </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="/videoNenNhat">ĐỒ THỊ NẾN NHẬT</a>            
+                <a class="dropdown-item" href="/videoBoLing">ĐƯỜNG XU HƯỚNG GIÁ</a>            
+                <a class="dropdown-item" href="/videoFiBo">FIBONANCCI VÀ ICHIMOKU</a>            
+                <a class="dropdown-item" href="/videoNangCao">NÂNG CAO</a>            
+              </div>
+            </li>
           </ul>
          
         </div>     

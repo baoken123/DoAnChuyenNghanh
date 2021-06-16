@@ -18,6 +18,10 @@ import FiboRetracement from '../TBook/PT-kithuat/FiboRetracement';
 import FiboExtention from '../TBook/PT-kithuat/FiboExtention';
 import NenNhatDaoChieu from '../TBook/PT-kithuat/NenNhatDaoChieu';
 import NenNhatTiepDien from '../TBook/PT-kithuat/NenNhatTiepDien';
+import VideoPT from '../TBook/PT-kithuat/VideoPT';
+import VideoPTBoling from '../TBook/PT-kithuat/VideoPTBoling';
+import VideoPTFibo from '../TBook/PT-kithuat/VideoPTFibo';
+import VideoPTNangCao from '../TBook/PT-kithuat/VideoPTNangCao';
 
 export default class Dieuhuong extends Component {
     render() {
@@ -33,6 +37,11 @@ export default class Dieuhuong extends Component {
                     <Route  path="/nen-nhat" component={NenNhat} />
                     <Route  path="/nendaochieu" component={NenNhatDaoChieu} />
                     <Route  path="/nentiepdien" component={NenNhatTiepDien} />
+
+                    <Route  path="/videoNenNhat" component={VideoPT} />
+                    <Route  path="/videoBoLing" component={VideoPTBoling} />
+                    <Route  path="/videoFiBo" component={VideoPTFibo} />
+                    <Route  path="/videoNangCao" component={VideoPTNangCao} />
 
                     <Route  path="/ptconban" component={PTcoban} />
                     <Route  path="/widgetfolow" component={WidgetFolow} />

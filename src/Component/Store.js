@@ -26,6 +26,7 @@ const allReducer = (state = dataInitialState, action) => {
         case "REMOVE":
             dataNote.child(action.deleteID).remove() 
             console.log("đã xóa phần tử có ID : " + JSON.stringify(action.deleteID)  + " thành công");
+            alert("đã xóa thành công!!");
             return state
             
         case "EDIT":
